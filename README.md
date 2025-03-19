@@ -1,4 +1,4 @@
-# Deli Audio Analisis
+# Deli Audio Analysis
 This is an application to analysis audio into spectrograms and FFT.
 
 ## Usage
