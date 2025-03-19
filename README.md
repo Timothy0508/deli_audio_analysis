@@ -1,16 +1,22 @@
 # Deli Audio Analysis
 This is an application to analysis audio into spectrograms and FFT.
 
+## Requirements
+1. [Python 3.12](https://www.python.org/downloads/release/python-3129/)
+2. [Poetry](https://python-poetry.org/docs/#installation)
+3. [Git](https://git-scm.com/downloads)
+
 ## Usage
 ### Windows:
-
-1. Install [Python 3.12](https://www.python.org/downloads/release/python-3129/)
-1. Install [Poetry](https://python-poetry.org/docs/#installation)
-1. Run command or double click run_app.bat
 ```
+git clone https://github.com/Timothy0508/deli_audio_analysis.git
+cd deli_audio_analysis
 ./run_app
 ```
 ### Linux and MacOS
-1. Install [Python 3.12](https://www.python.org/downloads/release/python-3129/)
-1. Install [Poetry](https://python-poetry.org/docs/#installation)
-1. run run_app.sh
+```
+git clone https://github.com/Timothy0508/deli_audio_analysis.git
+cd deli_audio_analysis
+chmod +x run_app.sh
+./run_app.sh
+```
