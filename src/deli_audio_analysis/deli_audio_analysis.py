@@ -2,6 +2,9 @@ import librosa
 import numpy as np
 import matplotlib.pyplot as plt
 import tensorflow as tf  # 導入 TensorFlow
+from rich import traceback
+
+traceback.install()
 
 def load_audio(audio_file):
     """載入音訊檔案。"""
