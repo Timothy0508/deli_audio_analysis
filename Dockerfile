@@ -6,13 +6,10 @@ WORKDIR /app
 
 # 複製專案檔案
 COPY pyproject.toml poetry.lock* ./
-COPY src/deli_audio_analysis/audio_analyzer.py src/deli_audio_analysis/__init__.py src/app.py ./
+COPY ./src/deli_audio_analysis/deli_audio_analysis.py ./src/deli_audio_analysis/__init__.py ./src/app.py ./
 
 # 安裝 Poetry
-RUN sudo apt update
-RUN sudo apt install pipx
-RUN pipx ensurepath
-RUN pipx install poetry
+RUN pip install --no-cache-dir poetry
 
 # 設定 Poetry 不創建虛擬環境並安裝專案依賴
 RUN poetry config virtualenvs.create false && poetry install --no-interaction --without dev
