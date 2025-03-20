@@ -7,6 +7,7 @@ WORKDIR /app
 # 複製專案檔案
 COPY pyproject.toml poetry.lock* ./
 COPY ./src/deli_audio_analysis/deli_audio_analysis.py ./src/deli_audio_analysis/__init__.py ./src/app.py ./
+COPY README.md LICENSE ./
 
 # 安裝 Poetry
 RUN pip install --no-cache-dir poetry
