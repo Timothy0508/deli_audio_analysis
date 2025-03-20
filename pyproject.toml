@@ -27,6 +27,11 @@ packages = [{include = "deli_audio_analysis", from = "src"}]
 [tool.poetry.dependencies]
 python = ">=3.12, <3.13"
 
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.5"
+black = "^25.1.0"
+flake8 = "^7.1.2"
+
 [tool.poetry.requires-plugins]
 poetry-plugin-export = ">=1.8"
 
