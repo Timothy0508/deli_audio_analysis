@@ -2,13 +2,14 @@ import numpy as np
 import streamlit as st
 import deli_audio_analysis as analyzer
 import pandas as pd
+import logging
 from io import BytesIO
-from rich import traceback
+from rich.logging import RichHandler
 
-traceback.install()
+logging.basicConfig(level=logging.NOTSET, format="%(message)s", datefmt="[%X]", handlers=[RichHandler(rich_tracebacks=True)])
 
 def main():
-    st.title("聲音頻譜分析應用程式")
+    st.title("聲音頻譜分析")
 
     uploaded_file = st.file_uploader("上傳一個音訊檔案", type=["wav", "mp3", "ogg"])
 
